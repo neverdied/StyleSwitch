@@ -7,24 +7,81 @@
     <link href="index.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<div class="container">
-<div class="logo">
+<main>
+<div class="controlTable">
+    <label>depth</label>
+    <div class="scroll" id="scroll">
+        <div class="bar" id="bar">
+        </div>
+    </div>
+    <p></p>
+    <input id="depth" type="text" name="depth" placeholder="depth"/>
+    <button type="submit" class="button" id="modifyCss" onclick="modify();">修改</button>
+</div>
+
+<div class="container" id="container_neu_morphism">
+<div class="logo" id="logo_neu_morphism">
     <img class="icon" src="icon.jpeg" width="100px" height="100px"/>
 </div>
 <div class="title">zhou</div>
 <div class="inputs">
     <label>EMALIL</label>
-    <input type="text" name="email" placeholder="example@email.com"/>
+    <input id="input1_neu_morphism" type="text" name="email" placeholder="example@email.com"/>
     <label>PASSWORD</label>
-    <input type="password" name="password" placeholder="Enter password"/>
-    <button type="submit">LOGIN</button>
+    <input id="input2_neu_morphism" type="password" name="password" placeholder="输入密码"/>
+    <button type="submit" class="button" id="button_neu_morphism">登录</button>
 </div>
 <div class="line">
     <a href="#">Forget password</a>
-    <span id="dot">.</span>
+    <span class="dot">.</span>
     <a href="#">Sign Up for zhou</a>
 </div>
 </div>
+
+
+<div class="container" id="container_clay_morphism">
+    <div class="logo" id="logo_clay_morphism">
+        <img class="icon" src="icon.jpeg" width="100px" height="100px"/>
+    </div>
+    <div class="title" id="title_clay_morphism">zhou</div>
+    <div class="inputs" id="inputs_clay_morphism">
+        <label>EMALIL</label>
+        <input id="input1_clay_morphism" type="text" name="email" placeholder="example@email.com"/>
+        <label>PASSWORD</label>
+        <input id="input2_clay_morphism" type="password" name="password" placeholder="输入密码"/>
+        <button type="submit" class="button" id="button_clay_morphism">登录</button>
+    </div>
+    <div class="line">
+        <a href="#">Forget password</a>
+        <span class="dot">.</span>
+        <a href="#">Sign Up for zhou</a>
+    </div>
+</div>
+
+<div class="container" id="container_glass">
+    <div id="glass"></div>
+    <div class="logo" id="logo_glass">
+        <img class="icon" src="icon.jpeg" width="100px" height="100px"/>
+    </div>
+    <div class="title" id="title_glass">zhou</div>
+    <div class="inputs" id="inputs_glass">
+        <label>EMALIL</label>
+        <input id="input1_glass" type="text" name="email" placeholder="example@email.com"/>
+        <label>PASSWORD</label>
+        <input id="input2_glass" type="password" name="password" placeholder="输入密码"/>
+        <button type="submit" class="button" id="button_glass">登录</button>
+    </div>
+    <div class="line">
+        <a href="#">Forget password</a>
+        <span class="dot">.</span>
+        <a href="#">Sign Up for zhou</a>
+    </div>
+</div>
+
+</main>
+<script src="index.js">
+    </script>
+
 
 </body>
 </html>
