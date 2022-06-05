@@ -6,35 +6,39 @@
     <title>StyleSwitch</title>
     <link href="index.css" rel="stylesheet" type="text/css"/>
 </head>
-<body>
-<main>
+<body onload="load(),modify()" >
+<main id="main">
 <div class="controlTable">
     <label>depth</label>
+    <button type="submit" class="button" id="less" onclick="less_click();">-</button>
+    <button type="submit" class="button" id="more" onclick="more_click()">+</button>
     <div class="scroll" id="scroll">
         <div class="bar" id="bar">
         </div>
     </div>
     <p></p>
-    <input id="depth" type="text" name="depth" placeholder="depth"/>
+    <input id="depth" type="text" name="depth" placeholder="depth" value="7"/>
     <button type="submit" class="button" id="modifyCss" onclick="modify();">修改</button>
+    <textarea id="code"  name="code" placeholder="选择喜欢的组件，此处会显示该组件的前端代码">
+    </textarea>
 </div>
 
 <div class="container" id="container_neu_morphism">
 <div class="logo" id="logo_neu_morphism">
     <img class="icon" src="icon.jpeg" width="100px" height="100px"/>
 </div>
-<div class="title">zhou</div>
+<div class="title">新拟态</div>
 <div class="inputs">
-    <label>EMALIL</label>
-    <input id="input1_neu_morphism" type="text" name="email" placeholder="example@email.com"/>
-    <label>PASSWORD</label>
-    <input id="input2_neu_morphism" type="password" name="password" placeholder="输入密码"/>
-    <button type="submit" class="button" id="button_neu_morphism">登录</button>
+    <label>邮箱</label>
+    <input id="input1_neu_morphism" type="text" name="email" onclick="onclick_input1_neu_morphism();" placeholder="example@email.com"/>
+    <label>密码</label>
+    <input id="input2_neu_morphism" type="password" name="password" onclick="onclick_input2_neu_morphism();" placeholder="输入密码"/>
+    <button type="submit" class="button" onclick="onclick_button_neu_morphism();" id="button_neu_morphism">登录</button>
 </div>
 <div class="line">
-    <a href="#">Forget password</a>
+    <a href="#">忘记密码</a>
     <span class="dot">.</span>
-    <a href="#">Sign Up for zhou</a>
+    <a href="#">注册</a>
 </div>
 </div>
 
@@ -43,18 +47,18 @@
     <div class="logo" id="logo_clay_morphism">
         <img class="icon" src="icon.jpeg" width="100px" height="100px"/>
     </div>
-    <div class="title" id="title_clay_morphism">zhou</div>
+    <div class="title" id="title_clay_morphism">泥陶态</div>
     <div class="inputs" id="inputs_clay_morphism">
-        <label>EMALIL</label>
-        <input id="input1_clay_morphism" type="text" name="email" placeholder="example@email.com"/>
-        <label>PASSWORD</label>
-        <input id="input2_clay_morphism" type="password" name="password" placeholder="输入密码"/>
-        <button type="submit" class="button" id="button_clay_morphism">登录</button>
+        <label>邮箱</label>
+        <input id="input1_clay_morphism" onclick="onclick_input1_clay_morphism()" type="text" name="email" placeholder="example@email.com"/>
+        <label>密码</label>
+        <input id="input2_clay_morphism" onclick="onclick_input2_clay_morphism()" type="password" name="password" placeholder="输入密码"/>
+        <button type="submit" onclick="onclick_button_clay_morphism()" class="button" id="button_clay_morphism">登录</button>
     </div>
     <div class="line">
-        <a href="#">Forget password</a>
+        <a href="#">忘记密码</a>
         <span class="dot">.</span>
-        <a href="#">Sign Up for zhou</a>
+        <a href="#">注册</a>
     </div>
 </div>
 
@@ -63,25 +67,21 @@
     <div class="logo" id="logo_glass">
         <img class="icon" src="icon.jpeg" width="100px" height="100px"/>
     </div>
-    <div class="title" id="title_glass">zhou</div>
+    <div class="title" id="title_glass">毛玻璃态</div>
     <div class="inputs" id="inputs_glass">
-        <label>EMALIL</label>
-        <input id="input1_glass" type="text" name="email" placeholder="example@email.com"/>
-        <label>PASSWORD</label>
+        <label>邮箱</label>
+        <input id="input1_glass"  type="text" name="email" placeholder="example@email.com"/>
+        <label>密码</label>
         <input id="input2_glass" type="password" name="password" placeholder="输入密码"/>
         <button type="submit" class="button" id="button_glass">登录</button>
     </div>
     <div class="line">
-        <a href="#">Forget password</a>
+        <a href="#">忘记密码</a>
         <span class="dot">.</span>
-        <a href="#">Sign Up for zhou</a>
+        <a href="#">注册</a>
     </div>
 </div>
-
 </main>
-<script src="index.js">
-    </script>
-
-
+<script src="index.js"></script>
 </body>
 </html>
