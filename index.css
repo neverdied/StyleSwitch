@@ -174,8 +174,8 @@ button:hover{
 
 /*加减按钮样式，手机端*/
 #more,#less{
-    width: 30%;
-    margin-bottom: 20px;
+    width: 45%;
+    margin-bottom: 10px;
 }
 #less{
     float: left;
